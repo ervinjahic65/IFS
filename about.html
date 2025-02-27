@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de Nosotros - {Company}</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transición personalizada para el ícono de menú hamburguesa */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Encabezado -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-10 w-auto">
+      </a>
+      <!-- Navegación de escritorio -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Inicio</a>
+        <a href="privacy.html" class="hover:text-gray-300">Privacidad</a>
+        <a href="terms.html" class="hover:text-gray-300">Términos</a>
+        <a href="contact.html" class="hover:text-gray-300">Contacto</a>
+      </nav>
+      <!-- Menú hamburguesa (Móvil) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Menú de navegación móvil -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Inicio</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Privacidad</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Términos</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Acerca de {Company}</h1>
+      <br>
+      <p>
+        Bienvenido a {Company}, donde la innovación se une con la excelencia. Desde nuestros inicios, nos hemos dedicado a ofrecer soluciones tecnológicas de vanguardia que impulsan el crecimiento de las empresas y facilitan la transformación digital. Con más de una década de experiencia, nuestro compromiso es brindar servicios integrales en el ámbito de la tecnología y el desarrollo de software.
+      </p>
+      <br>
+      <p>
+        Nuestra misión es clara: diseñar y ejecutar proyectos de software que superen las expectativas de nuestros clientes. Creemos firmemente en el poder de la tecnología para transformar negocios, optimizar procesos y abrir nuevas oportunidades de mercado. Por ello, trabajamos codo a codo con nuestros clientes, comprendiendo sus necesidades y ofreciendo soluciones personalizadas y escalables.
+      </p>
+      <br>
+      <p>
+        En {Company}, contamos con un equipo multidisciplinario de profesionales comprometidos y apasionados por la tecnología. Nuestra experiencia abarca desde el desarrollo de aplicaciones móviles y sistemas empresariales hasta la implementación de soluciones basadas en la nube y consultoría estratégica. Cada proyecto es abordado con rigor, creatividad y una atención meticulosa a los detalles.
+      </p>
+      <br>
+      <p>
+        Adoptamos metodologías ágiles que nos permiten entregar resultados de alta calidad en tiempos reducidos. Nuestro enfoque integral garantiza que cada solución se adapte a los requerimientos específicos de cada cliente, fomentando la innovación y la eficiencia en cada etapa del proceso. La seguridad y la confiabilidad son pilares fundamentales en nuestros desarrollos, lo que nos ha permitido consolidarnos como un aliado estratégico para empresas de diversos sectores.
+      </p>
+      <br>
+      <p>
+        La mejora continua es parte de nuestra filosofía. Invertimos constantemente en capacitación y actualización tecnológica para estar a la vanguardia de las tendencias y avances del mercado. Esta dedicación se refleja en cada uno de nuestros proyectos, donde aplicamos técnicas modernas y probadas para asegurar un rendimiento óptimo y resultados sostenibles.
+      </p>
+      <br>
+      <p>
+        Nuestro compromiso no se limita a la entrega de soluciones; también brindamos soporte técnico y consultoría post-implementación para garantizar que nuestros clientes aprovechen al máximo sus inversiones tecnológicas. Creemos en la transparencia y en una comunicación abierta, lo que nos permite construir relaciones duraderas basadas en la confianza mutua y en el éxito compartido.
+      </p>
+      <br>
+      <p>
+        En {Company} valoramos el trabajo en equipo y la colaboración, elementos esenciales para afrontar los desafíos del mundo digital. Nuestro objetivo es convertirnos en un referente en el sector, aportando valor agregado a través de soluciones innovadoras y adaptadas a las necesidades cambiantes de la industria.
+      </p>
+      <br>
+      <p>
+        Invitamos a nuestros clientes y socios a explorar nuestro portafolio de servicios, diseñado para atender desde pequeñas empresas hasta grandes corporativos. Estamos convencidos de que la tecnología es la llave para abrir puertas al futuro, y en {Company} estamos preparados para acompañarte en cada paso de ese camino.
+      </p>
+      <br>
+      <p>
+        Gracias por confiar en nosotros. Nuestro compromiso es seguir creciendo y adaptándonos para ofrecer siempre lo mejor en soluciones tecnológicas, garantizando calidad, seguridad y eficiencia en cada proyecto. En un mundo en constante cambio, {Company} es tu aliado para alcanzar el éxito y transformar tu visión en realidad.
+      </p>
+    </article>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Izquierda del Pie: Logo e Información de la Empresa -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-10 mb-4">
+          <p class="text-sm">
+            {Company} es una empresa innovadora dedicada a ofrecer soluciones integrales en TI. <br>
+            Con certificaciones internacionales y un firme compromiso con la excelencia, brindamos soluciones de software seguras, <br> 
+            escalables e inteligentes para potenciar el éxito de nuestros clientes.
+          </p>
+          <p class="text-xs mt-4">
+            CNPJ: 78.989.613/0001-90<br>
+            Inscripción Estatal: 8324829-77<br>
+            974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516<br>
+            Teléfono: (75) 2871-8215
+          </p>
+          <p class="text-xs mt-2">© 2025 {Company}. Todos los derechos reservados.</p>
+        </div>
+        <!-- Derecha del Pie: Enlaces de Navegación -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Inicio</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Privacidad</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Términos</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript para el toggle del menú móvil -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
