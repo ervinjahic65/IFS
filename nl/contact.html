@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Aangepaste overgang voor het hamburgermenu-icoon */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Desktop Navigatie -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="about.html" class="hover:text-gray-300">Over ons</a>
+        <a href="terms.html" class="hover:text-gray-300">Voorwaarden</a>
+        <a href="privacy.html" class="hover:text-gray-300">Privacy</a>
+      </nav>
+      <!-- Hamburger Menu (Mobiel) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobiele Navigatiemenu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Over ons</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Voorwaarden</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hoofdinhoud -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <section class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Neem contact op</h1>
+      <p class="mb-4">
+        Bij Tech View Business horen we graag van u. Als u vragen heeft, suggesties wilt delen of meer informatie nodig heeft over onze diensten, gebruik dan het onderstaande formulier of neem contact op via de vermelde gegevens.
+      </p>
+      <!-- Contactformulier -->
+      <form id="form" class="space-y-4">
+        <div>
+          <label for="nombre" class="block text-gray-700">Naam</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Uw naam" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="u@example.com" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="mensaje" class="block text-gray-700">Bericht</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Schrijf hier uw bericht..." class="w-full p-2 border border-gray-300 rounded" required></textarea>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+          Verzend bericht
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Linker Footer: Logo en Bedrijfsinformatie -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business is een innovatief bedrijf dat zich inzet voor het leveren van uitgebreide IT-oplossingen. <br>
+            Met internationale certificeringen en een sterke toewijding aan excellentie leveren wij veilige, schaalbare en intelligente softwareoplossingen om het succes van onze klanten te versterken.
+          </p>
+          <p class="text-xs mt-4">
+            Bedrijfsnummer: 00943935<br>
+            Adres: Lime St, London EC3M 7HR, VK<br>
+            Telefoonnummer: 01632 960189
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Alle rechten voorbehouden.</p>
+        </div>
+        <!-- Rechter Footer: Navigatielinks -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Home</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">Over ons</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Voorwaarden</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript voor Mobiele Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      // Gebruik een flexbox-container om de GIF te centreren
+      document.getElementById("form").innerHTML = '<div style="display: flex; justify-content: center;"><img src="files/loading.gif" width="80"></div>';
+  
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color: black; font-weight: 700; text-align: center;">Bedankt voor uw bericht. Een vertegenwoordiger zal spoedig contact met u opnemen.</p>';
+      }, 2000);
+    });
+  </script>  
+</body>
+</html>
