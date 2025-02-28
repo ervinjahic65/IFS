@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 햄버거 메뉴 아이콘 전환 효과 */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- 헤더 -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- 로고 -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- 데스크탑 내비게이션 -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">홈</a>
+        <a href="about.html" class="hover:text-gray-300">회사소개</a>
+        <a href="terms.html" class="hover:text-gray-300">이용약관</a>
+        <a href="contact.html" class="hover:text-gray-300">문의하기</a>
+      </nav>
+      <!-- 햄버거 메뉴 (모바일) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- 모바일 내비게이션 메뉴 -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">홈</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">회사소개</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">이용약관</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">문의하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>개인정보처리방침</h1>
+      <br>
+      <p>
+        Tech View Business는 고객 및 사용자의 개인정보를 소중히 여기고 보호합니다. 본 개인정보처리방침은 당사의 웹사이트 및 서비스를 통해 위임받은 개인정보를 수집, 이용 및 보호하는 방법을 설명합니다. 당사는 귀하의 데이터 보안을 보장하고 정보 처리에 대해 완전한 투명성을 제공할 것을 약속합니다.
+      </p>
+      <br>
+      <p>
+        당사는 항상 사용자의 명시적 동의 하에 합법적이고 윤리적인 방식으로 개인정보를 수집합니다. 수집될 수 있는 정보에는 이름, 이메일 주소, 전화번호 및 당사 서비스 제공에 필요한 기타 관련 세부 정보가 포함됩니다. 또한, 당사는 사용자 경험 향상, 트렌드 분석 및 웹사이트 관리를 위해 쿠키 및 기타 추적 기술을 사용합니다.
+      </p>
+      <br>
+      <p>
+        수집된 정보는 당사 서비스 맞춤화, 요청 처리, 사이트 기능 개선 및 제품 업데이트나 뉴스와 같은 관련 커뮤니케이션 발송에 사용됩니다. 당사는 법률에 의해 요구되거나 당사의 권리를 보호하기 위한 경우를 제외하고, 사전 동의 없이 귀하의 개인정보를 제3자에게 판매, 임대 또는 공유하지 않을 것을 약속합니다.
+      </p>
+      <br>
+      <p>
+        귀하의 데이터 보안을 보장하기 위해 당사는 데이터 암호화, 방화벽, 제한된 시스템 접근 및 정기적인 보안 감사 등 기술적·조직적 조치를 시행합니다. 또한, 당사 직원들은 데이터 처리 및 기밀 유지에 관한 모범 사례에 대해 교육받아 모든 운영에서 높은 보호 기준을 유지하고 있습니다.
+      </p>
+      <br>
+      <p>
+        당사 서비스를 이용할 때 사용자가 본 개인정보처리방침을 인지하고 동의하는 것이 중요합니다. 당사는 법률 변경이나 내부 프로세스 조정에 따라 본 문서를 업데이트할 수 있으므로, 정기적으로 검토할 것을 권장합니다. 귀하의 데이터 처리에 관한 질문이나 우려 사항이 있으시면, 주저하지 마시고 고객 지원팀에 문의해 주시기 바랍니다.
+      </p>
+      <br>
+      <p>
+        당사 웹사이트를 탐색함으로써, 귀하는 귀하의 개인정보 사용에 대해 안내받았으며 본 방침의 조건에 동의함을 인정하는 것입니다. 귀하의 개인정보는 당사에게 근본적인 가치이며, 당사는 귀하의 정보의 무결성과 기밀을 지속적으로 유지하기 위해 노력하고 있습니다. 당사는 투명성과 책임감을 바탕으로 귀하와의 관계를 구축하는 적극적인 접근 방식을 채택하고 있습니다.
+      </p>
+      <br>
+      <p>
+        Tech View Business는 언제든지 본 개인정보처리방침을 수정할 권리를 보유하며, 웹사이트 공지사항 또는 이메일을 통해 사용자에게 이를 알릴 것입니다. 당사의 목표는 귀하의 개인정보가 보호된다는 확신과 함께 당사 서비스를 이용할 수 있도록 안전하고 신뢰할 수 있는 환경을 제공하는 것입니다.
+      </p>
+      <br>
+      <p>
+        본 개인정보처리방침은 Tech View Business가 운영하는 웹사이트 및 기타 온라인 서비스를 통해 수집된 모든 개인정보에 적용됩니다. 요청된 정보를 제공하지 않으실 경우 당사가 제공하는 일부 기능이나 서비스를 이용하실 수 없을 수도 있으나, 당사는 귀하의 데이터를 항상 최대한 주의와 보안을 기하여 처리할 것을 보장합니다.
+      </p>
+    </article>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- 왼쪽 푸터: 로고 및 회사 정보 -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business는 포괄적인 IT 솔루션을 제공하는 혁신적인 기업입니다. <br>
+            국제 인증과 강한 헌신을 바탕으로, 당사는 안전하고 확장 가능하며 지능적인 소프트웨어 솔루션을 통해 고객의 성공을 지원합니다.
+          </p>
+          <p class="text-xs mt-4">
+            주소: 서울특별시 중구 서소문동 21-1<br>
+            전화: +34 986 227 374<br>
+            법인 등록 번호: 4010501096087
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. 이 모든 권리 보유.</p>
+        </div>
+        <!-- 오른쪽 푸터: 내비게이션 링크 -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">홈</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">회사소개</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">이용약관</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">문의하기</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모바일 메뉴 토글을 위한 JavaScript -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

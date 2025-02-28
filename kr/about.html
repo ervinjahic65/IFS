@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회사 소개 - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 햄버거 메뉴 아이콘 전환 효과 */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- 헤더 -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- 로고 -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- 데스크탑 내비게이션 -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">홈</a>
+        <a href="privacy.html" class="hover:text-gray-300">개인정보</a>
+        <a href="terms.html" class="hover:text-gray-300">이용약관</a>
+        <a href="contact.html" class="hover:text-gray-300">문의하기</a>
+      </nav>
+      <!-- 햄버거 메뉴 (모바일) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- 모바일 내비게이션 메뉴 -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">홈</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">개인정보</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">이용약관</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">문의하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Tech View Business 소개</h1>
+      <br>
+      <p>
+        Tech View Business에 오신 것을 환영합니다. 혁신과 탁월함이 만나는 곳입니다. 당사의 설립 이래로, 우리는 비즈니스 성장을 촉진하고 디지털 전환을 지원하는 최첨단 기술 솔루션 제공에 전념해 왔습니다. 10년 이상의 경험을 바탕으로, 당사는 기술 및 소프트웨어 개발 분야에서 포괄적인 서비스를 제공하는 데 헌신하고 있습니다.
+      </p>
+      <br>
+      <p>
+        당사의 미션은 명확합니다: 고객의 기대를 뛰어넘는 소프트웨어 프로젝트를 설계하고 실행하는 것입니다. 우리는 기술이 비즈니스를 혁신하고, 프로세스를 최적화하며, 새로운 시장 기회를 열어줄 수 있다고 굳게 믿습니다. 그렇기 때문에 당사는 고객과 긴밀히 협력하여 그들의 요구를 이해하고 맞춤형이며 확장 가능한 솔루션을 제공합니다.
+      </p>
+      <br>
+      <p>
+        Tech View Business에는 기술에 열정적이고 헌신적인 다학제적 전문가 팀이 있습니다. 당사의 전문성은 모바일 애플리케이션 및 기업 시스템 개발에서부터 클라우드 기반 솔루션 구현 및 전략 컨설팅에 이르기까지 다양합니다. 각 프로젝트는 철저함, 창의성, 세심한 주의를 기울여 진행됩니다.
+      </p>
+      <br>
+      <p>
+        당사는 애자일 방법론을 도입하여 단축된 시간 내에 높은 품질의 결과를 제공합니다. 당사의 포괄적인 접근 방식은 각 솔루션이 모든 고객의 특정 요구 사항을 충족하도록 보장하며, 프로세스의 모든 단계에서 혁신과 효율성을 촉진합니다. 보안과 신뢰성은 당사 개발의 근본적인 기둥으로, 이를 통해 다양한 분야의 기업들에게 전략적 파트너로 자리매김할 수 있었습니다.
+      </p>
+      <br>
+      <p>
+        지속적인 개선은 당사의 철학의 일부입니다. 당사는 시장 동향과 기술 발전의 최전선에 서기 위해 지속적으로 교육 및 기술 업데이트에 투자합니다. 이러한 헌신은 각 프로젝트에 반영되어, 최적의 성능과 지속 가능한 결과를 보장하기 위해 현대적이고 검증된 기법을 적용합니다.
+      </p>
+      <br>
+      <p>
+        당사의 헌신은 단순히 솔루션 제공에 그치지 않습니다. 고객이 기술 투자에서 최대의 가치를 얻을 수 있도록 기술 지원 및 사후 컨설팅도 제공합니다. 당사는 투명성과 열린 소통을 믿으며, 이를 통해 상호 신뢰와 공동의 성공을 기반으로 한 장기적인 관계를 구축할 수 있습니다.
+      </p>
+      <br>
+      <p>
+        Tech View Business에서는 팀워크와 협력을 소중히 여기며, 이는 디지털 세계의 도전에 맞서기 위한 필수 요소입니다. 당사의 목표는 업계의 기준이 되어, 시장의 변화하는 요구에 맞춘 혁신적인 솔루션을 통해 가치를 더하는 것입니다.
+      </p>
+      <br>
+      <p>
+        당사는 소규모 기업부터 대기업에 이르기까지 다양한 고객의 요구를 충족시키기 위해 설계된 당사의 서비스 포트폴리오를 탐색해 보시길 초대합니다. 우리는 기술이 미래를 여는 열쇠라고 확신하며, Tech View Business에서는 여러분의 여정에 함께할 준비가 되어 있습니다.
+      </p>
+      <br>
+      <p>
+        저희를 신뢰해 주셔서 감사합니다. 당사의 약속은 계속해서 성장하고 변화하며, 모든 프로젝트에서 품질, 보안, 효율성을 보장하는 최고의 기술 솔루션을 제공하는 것입니다. 끊임없이 변화하는 세상에서 Tech View Business는 여러분의 성공을 실현하고 비전을 현실로 전환하는 파트너입니다.
+      </p>
+    </article>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- 왼쪽 푸터: 로고 및 회사 정보 -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business는 포괄적인 IT 솔루션을 제공하는 혁신적인 기업입니다. <br>
+            국제 인증과 탁월함에 대한 강한 헌신을 바탕으로, 당사는 안전하고 확장 가능하며 지능적인 소프트웨어 솔루션을 통해 고객의 성공을 지원합니다.
+          </p>
+          <p class="text-xs mt-4">
+            주소: 서울특별시 중구 서소문동 21-1<br>
+            전화: +34 986 227 374<br>
+            법인 등록 번호: 4010501096087
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. 이 모든 권리 보유.</p>
+        </div>
+        <!-- 오른쪽 푸터: 내비게이션 링크 -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">홈</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">개인정보</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">이용약관</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">문의하기</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모바일 메뉴 토글을 위한 JavaScript -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
