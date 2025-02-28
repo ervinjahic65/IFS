@@ -2729,6 +2729,9 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
                             .hhs-hat-menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li.hs-menu-depth-1 { 
                                 display: none !important;
                             }
+                         }
+
+                         @media (max-width: 1285px) {
                             img.hs-image-widget {
                                 width: 145px !important;
                                 margin-left: 0 !important;
