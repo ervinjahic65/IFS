@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Về Chúng Tôi - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Chuyển tiếp tùy chỉnh cho biểu tượng menu hamburger */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
+        <a href="privacy.html" class="hover:text-gray-300">Chính sách bảo mật</a>
+        <a href="terms.html" class="hover:text-gray-300">Điều khoản</a>
+        <a href="contact.html" class="hover:text-gray-300">Liên hệ</a>
+      </nav>
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Trang chủ</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Chính sách bảo mật</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Điều khoản</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Giới thiệu về Tech View Business</h1>
+      <br>
+      <p>
+        Chào mừng quý vị đến với Tech View Business, nơi mà sự đổi mới gặp gỡ sự xuất sắc. Ngay từ những ngày đầu thành lập, chúng tôi đã luôn tận tâm cung cấp các giải pháp công nghệ tiên tiến nhằm thúc đẩy tăng trưởng doanh nghiệp và tạo điều kiện cho quá trình chuyển đổi số. Với hơn một thập kỷ kinh nghiệm, cam kết của chúng tôi là mang đến những dịch vụ toàn diện trong lĩnh vực công nghệ và phát triển phần mềm.
+      </p>
+      <br>
+      <p>
+        Sứ mệnh của chúng tôi rất rõ ràng: thiết kế và triển khai các dự án phần mềm vượt trên cả sự mong đợi của khách hàng. Chúng tôi tin tưởng mạnh mẽ vào sức mạnh của công nghệ trong việc chuyển đổi doanh nghiệp, tối ưu hóa quy trình và mở ra những cơ hội thị trường mới. Đó là lý do vì sao chúng tôi luôn làm việc chặt chẽ với khách hàng, lắng nghe nhu cầu và cung cấp những giải pháp tùy chỉnh, có khả năng mở rộng.
+      </p>
+      <br>
+      <p>
+        Tại Tech View Business, chúng tôi sở hữu một đội ngũ chuyên gia đa ngành, luôn đam mê và cam kết với công nghệ. Chuyên môn của chúng tôi bao gồm phát triển ứng dụng di động, hệ thống doanh nghiệp, triển khai các giải pháp dựa trên đám mây và tư vấn chiến lược. Mỗi dự án đều được tiếp cận với sự nghiêm túc, sáng tạo và chú trọng đến từng chi tiết.
+      </p>
+      <br>
+      <p>
+        Chúng tôi áp dụng các phương pháp linh hoạt, cho phép cung cấp kết quả chất lượng cao trong thời gian rút ngắn. Phương pháp tiếp cận toàn diện đảm bảo mỗi giải pháp đáp ứng đúng yêu cầu cụ thể của từng khách hàng, thúc đẩy sự đổi mới và hiệu quả ở mọi giai đoạn của quá trình. An toàn và độ tin cậy là những trụ cột cơ bản trong các phát triển của chúng tôi, giúp khẳng định vị thế là đối tác chiến lược của nhiều doanh nghiệp thuộc các lĩnh vực khác nhau.
+      </p>
+      <br>
+      <p>
+        Sự cải tiến liên tục là một phần không thể thiếu trong triết lý của chúng tôi. Chúng tôi luôn đầu tư vào đào tạo và cập nhật công nghệ để duy trì vị thế dẫn đầu xu hướng và những tiến bộ mới trên thị trường. Sự tận tâm này được thể hiện qua từng dự án, nơi chúng tôi áp dụng các kỹ thuật hiện đại, đã được kiểm chứng nhằm đảm bảo hiệu suất tối ưu và kết quả bền vững.
+      </p>
+      <br>
+      <p>
+        Cam kết của chúng tôi không chỉ dừng lại ở việc cung cấp giải pháp; chúng tôi còn hỗ trợ kỹ thuật và tư vấn sau triển khai để đảm bảo khách hàng tối đa hóa đầu tư công nghệ của mình. Chúng tôi tin vào sự minh bạch và giao tiếp cởi mở, từ đó xây dựng mối quan hệ bền vững dựa trên niềm tin và thành công chung.
+      </p>
+      <br>
+      <p>
+        Tại Tech View Business, chúng tôi coi trọng tinh thần đồng đội và sự hợp tác – những yếu tố thiết yếu để vượt qua những thách thức của thế giới số. Mục tiêu của chúng tôi là trở thành một chuẩn mực trong ngành, mang lại giá trị qua các giải pháp sáng tạo, phù hợp với nhu cầu thay đổi của thị trường.
+      </p>
+      <br>
+      <p>
+        Chúng tôi mời gọi khách hàng và đối tác cùng khám phá danh mục dịch vụ của chúng tôi, được thiết kế phục vụ từ các doanh nghiệp nhỏ đến các tập đoàn lớn. Chúng tôi tin rằng công nghệ chính là chìa khóa mở ra tương lai, và tại Tech View Business, chúng tôi sẵn sàng đồng hành cùng bạn trên từng bước đường.
+      </p>
+      <br>
+      <p>
+        Xin cảm ơn quý vị đã tin tưởng. Cam kết của chúng tôi là tiếp tục phát triển và thích nghi để luôn mang đến những giải pháp công nghệ tốt nhất, đảm bảo chất lượng, an toàn và hiệu quả trong mọi dự án. Trong một thế giới luôn thay đổi, Tech View Business chính là đối tác giúp bạn đạt được thành công và biến tầm nhìn thành hiện thực.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Left Footer: Logo and Company Information -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business là một công ty đổi mới, chuyên cung cấp các giải pháp CNTT toàn diện. <br>
+            Với các chứng nhận quốc tế và cam kết mạnh mẽ về sự xuất sắc, chúng tôi cung cấp các giải <br> pháp phần mềm an toàn, có khả năng mở rộng và thông minh nhằm nâng cao thành công cho khách hàng.
+          </p>
+          <p class="text-xs mt-4">
+            BRN: CR545721<br>
+            Địa chỉ: 13 Tsut Kou Ngan South Street Tsik Sit Hồng Kông<br>
+            Điện thoại: 30990879
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Bảo lưu mọi quyền.</p>
+        </div>
+        <!-- Right Footer: Navigation Links -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Trang chủ</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Chính sách bảo mật</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Điều khoản</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

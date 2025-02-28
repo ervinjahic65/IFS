@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Chuyển tiếp tùy chỉnh cho biểu tượng menu hamburger */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
+        <a href="about.html" class="hover:text-gray-300">Về chúng tôi</a>
+        <a href="terms.html" class="hover:text-gray-300">Điều khoản</a>
+        <a href="privacy.html" class="hover:text-gray-300">Chính sách bảo mật</a>
+      </nav>
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Trang chủ</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Về chúng tôi</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Điều khoản</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Chính sách bảo mật</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <section class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Liên Hệ Với Chúng Tôi</h1>
+      <p class="mb-4">
+        Tại Tech View Business, chúng tôi rất mong được nghe ý kiến từ bạn. Nếu bạn có bất kỳ câu hỏi, đề xuất hoặc cần thêm thông tin về các dịch vụ của chúng tôi, hãy sử dụng mẫu dưới đây hoặc liên hệ qua các thông tin được cung cấp.
+      </p>
+      <!-- Contact Form -->
+      <form id="form" class="space-y-4">
+        <div>
+          <label for="nombre" class="block text-gray-700">Họ và Tên</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tên của bạn" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="mensaje" class="block text-gray-700">Tin nhắn</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Viết tin nhắn của bạn tại đây..." class="w-full p-2 border border-gray-300 rounded" required></textarea>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+          Gửi Tin Nhắn
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Left Footer: Logo and Company Information -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business là một công ty đổi mới, chuyên cung cấp các giải pháp CNTT toàn diện. <br>
+            Với các chứng nhận quốc tế và cam kết mạnh mẽ về sự xuất sắc, chúng tôi cung cấp các giải <br> pháp phần mềm an toàn, có khả năng mở rộng và thông minh nhằm nâng cao thành công cho khách hàng.
+          </p>
+          <p class="text-xs mt-4">
+            BRN: CR545721<br>
+            Địa chỉ: 13 Tsut Kou Ngan South Street Tsik Sit Hồng Kông<br>
+            Điện thoại: 30990879
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Bảo lưu mọi quyền.</p>
+        </div>
+        <!-- Right Footer: Navigation Links -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Trang chủ</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">Về chúng tôi</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Điều khoản</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      // Hiển thị GIF tải trong một container flexbox căn giữa
+      document.getElementById("form").innerHTML = '<div style="display: flex; justify-content: center;"><img src="files/loading.gif" width="80"></div>';
+  
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color: black; font-weight: 700; text-align: center;">Cảm ơn bạn đã liên hệ. Đại diện của chúng tôi sẽ sớm liên lạc với bạn.</p>';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

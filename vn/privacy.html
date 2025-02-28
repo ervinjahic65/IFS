@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính sách Bảo mật - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Chuyển tiếp tùy chỉnh cho biểu tượng menu hamburger */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Trang chủ</a>
+        <a href="about.html" class="hover:text-gray-300">Về chúng tôi</a>
+        <a href="terms.html" class="hover:text-gray-300">Điều khoản</a>
+        <a href="contact.html" class="hover:text-gray-300">Liên hệ</a>
+      </nav>
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Trang chủ</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Về chúng tôi</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Điều khoản</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Chính sách Bảo mật</h1>
+      <br>
+      <p>
+        Tại Tech View Business, chúng tôi coi trọng và bảo vệ sự riêng tư của khách hàng và người dùng. Chính sách bảo mật này mô tả cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân được giao phó thông qua các trang web và dịch vụ của chúng tôi. Cam kết của chúng tôi là đảm bảo an toàn cho dữ liệu của bạn và cung cấp sự minh bạch hoàn toàn về cách chúng tôi xử lý thông tin.
+      </p>
+      <br>
+      <p>
+        Chúng tôi thu thập dữ liệu cá nhân một cách hợp pháp và có đạo đức, luôn có sự đồng ý rõ ràng của người dùng. Thông tin mà chúng tôi có thể thu thập bao gồm tên, địa chỉ email, số điện thoại và các chi tiết liên quan khác cần thiết để cung cấp dịch vụ của chúng tôi. Ngoài ra, chúng tôi sử dụng cookie và các công nghệ theo dõi khác để nâng cao trải nghiệm người dùng, phân tích xu hướng và quản lý trang web.
+      </p>
+      <br>
+      <p>
+        Thông tin thu thập được được sử dụng để cá nhân hóa dịch vụ, xử lý các yêu cầu, cải thiện chức năng của trang web và gửi các thông báo liên quan như cập nhật hoặc tin tức về sản phẩm của chúng tôi. Chúng tôi cam kết không bán, cho thuê hoặc chia sẻ thông tin cá nhân của bạn với bên thứ ba mà không có sự đồng ý trước của bạn, trừ khi được yêu cầu bởi pháp luật hoặc để bảo vệ quyền lợi của chúng tôi.
+      </p>
+      <br>
+      <p>
+        Để đảm bảo an toàn cho dữ liệu của bạn, chúng tôi triển khai các biện pháp kỹ thuật và tổ chức bao gồm mã hóa dữ liệu, tường lửa, hạn chế truy cập hệ thống và kiểm tra bảo mật định kỳ. Ngoài ra, nhân viên của chúng tôi được đào tạo về các thực tiễn tốt nhất trong việc xử lý dữ liệu và bảo mật, cho phép chúng tôi duy trì tiêu chuẩn bảo vệ cao trong mọi hoạt động.
+      </p>
+      <br>
+      <p>
+        Điều quan trọng là người dùng cần nhận thức và chấp nhận chính sách bảo mật này khi sử dụng dịch vụ của chúng tôi. Chúng tôi khuyến nghị bạn nên xem lại tài liệu này định kỳ, vì chúng tôi có thể cập nhật nó để phù hợp với những thay đổi của pháp luật hoặc điều chỉnh quy trình nội bộ. Nếu bạn có bất kỳ câu hỏi hoặc băn khoăn nào liên quan đến việc xử lý dữ liệu của mình, xin vui lòng liên hệ với đội ngũ hỗ trợ khách hàng của chúng tôi.
+      </p>
+      <br>
+      <p>
+        Khi duyệt trang web của chúng tôi, bạn xác nhận rằng bạn đã được thông báo về việc sử dụng dữ liệu cá nhân của mình và đồng ý với các điều khoản của chính sách này. Sự riêng tư của bạn là điều quan trọng đối với chúng tôi, và chúng tôi không ngừng nỗ lực để duy trì tính toàn vẹn và bảo mật của thông tin. Chúng tôi áp dụng một phương pháp chủ động, trong đó sự minh bạch và trách nhiệm là nền tảng của mối quan hệ giữa chúng tôi và bạn.
+      </p>
+      <br>
+      <p>
+        Tech View Business bảo lưu quyền sửa đổi chính sách bảo mật này bất cứ lúc nào, thông báo cho người dùng thông qua các thông báo trên trang web hoặc qua email. Mục tiêu của chúng tôi luôn là cung cấp một môi trường an toàn và đáng tin cậy để bạn có thể sử dụng dịch vụ với sự đảm bảo rằng thông tin cá nhân của bạn được bảo vệ.
+      </p>
+      <br>
+      <p>
+        Chính sách bảo mật này áp dụng cho tất cả dữ liệu cá nhân được thu thập qua trang web và các dịch vụ trực tuyến khác do Tech View Business điều hành. Nếu bạn chọn không cung cấp thông tin yêu cầu, bạn có thể không sử dụng được một số tính năng hoặc dịch vụ mà chúng tôi cung cấp; tuy nhiên, chúng tôi đảm bảo rằng dữ liệu của bạn sẽ luôn được xử lý với sự cẩn trọng và an toàn tối đa.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Left Footer: Logo and Company Information -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business là một công ty đổi mới, chuyên cung cấp các giải pháp CNTT toàn diện. <br>
+            Với các chứng nhận quốc tế và cam kết mạnh mẽ về sự xuất sắc, chúng tôi cung cấp các giải <br> pháp phần mềm an toàn, có khả năng mở rộng và thông minh nhằm nâng cao thành công cho khách hàng.
+          </p>
+          <p class="text-xs mt-4">
+            BRN: CR545721<br>
+            Địa chỉ: 13 Tsut Kou Ngan South Street Tsik Sit Hồng Kông<br>
+            Điện thoại: 30990879
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Bảo lưu mọi quyền.</p>
+        </div>
+        <!-- Right Footer: Navigation Links -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Trang chủ</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">Về chúng tôi</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Điều khoản</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
