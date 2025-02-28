@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom transition for the hamburger menu icon */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="about.html" class="hover:text-gray-300">About</a>
+        <a href="terms.html" class="hover:text-gray-300">Terms</a>
+        <a href="privacy.html" class="hover:text-gray-300">Privacy</a>
+      </nav>
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">About</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Terms</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <section class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Contact Us</h1>
+      <p class="mb-4">
+        At Tech View Business, we would love to hear from you. If you have any questions, suggestions, or need further information about our services, please use the form below or reach out using the contact details provided.
+      </p>
+      <!-- Contact Form -->
+      <form id="form" class="space-y-4">
+        <div>
+          <label for="nombre" class="block text-gray-700">Name</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Your name" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="mensaje" class="block text-gray-700">Message</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Write your message here..." class="w-full p-2 border border-gray-300 rounded" required></textarea>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+          Send Message
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Left Footer: Logo and Company Information -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business is an innovative company dedicated to providing comprehensive IT solutions. <br>
+            With international certifications and a firm commitment to excellence, we deliver secure, scalable, and intelligent software solutions to empower our clients' success.
+          </p>
+          <p class="text-xs mt-4">
+            CIN: U01631KA2010PTC096843<br>
+            Address: 2, Western Urban Rd, Davri Nagar, Siddharth Nagar, Santacruz East, Mumbai, Maharashtra 400055, India<br>
+            Phone: 0674 2702416
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. All rights reserved.</p>
+        </div>
+        <!-- Right Footer: Navigation Links -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Home</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">About</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Terms</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      // Use flexbox container to center the GIF
+      document.getElementById("form").innerHTML = '<div style="display: flex; justify-content: center;"><img src="files/loading.gif" width="80"></div>';
+  
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color: black; font-weight: 700; text-align: center;">Thank you for getting in touch. A representative will contact you soon.</p>';
+      }, 2000);
+    });
+  </script>  
+</body>
+</html>
