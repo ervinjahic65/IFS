@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transição personalizada para o ícone do menu hambúrguer */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Cabeçalho -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Navegação para desktop -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Início</a>
+        <a href="about.html" class="hover:text-gray-300">Sobre</a>
+        <a href="terms.html" class="hover:text-gray-300">Termos</a>
+        <a href="privacy.html" class="hover:text-gray-300">Privacidade</a>
+      </nav>
+      <!-- Menu hambúrguer (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Navegação mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Início</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Sobre</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Termos</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Privacidade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <section class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Contate-nos</h1>
+      <p class="mb-4">
+        Na Tech View Business, adoraríamos ouvir você. Se você tiver alguma dúvida, sugestão ou precisar de informações adicionais sobre nossos serviços, por favor, utilize o formulário abaixo ou entre em contato através dos nossos dados.
+      </p>
+      <!-- Formulário de contato -->
+      <form id="form" class="space-y-4">
+        <div>
+          <label for="nome" class="block text-gray-700">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@exemplo.com" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="mensagem" class="block text-gray-700">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." class="w-full p-2 border border-gray-300 rounded" required></textarea>
+        </div>
+        <button type="submit" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+          Enviar Mensagem
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Esquerda do Rodapé: Logo e Informações da Empresa -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business é uma empresa inovadora dedicada a oferecer soluções integrais em TI. <br>
+            Com certificações internacionais e um firme compromisso com a excelência, fornecemos soluções de software seguras, <br>
+            escaláveis e inteligentes para potencializar o sucesso dos nossos clientes.
+          </p>
+          <p class="text-xs mt-4">
+            CNPJ: 78.989.613/0001-90<br>
+            Inscrição Estadual: 8324829-77<br>
+            974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516<br>
+            Telefone: (75) 2871-8215
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Todos os direitos reservados.</p>
+        </div>
+        <!-- Direita do Rodapé: Links de Navegação -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Início</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">Sobre</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Termos</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript para alternar o menu mobile -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      // Usar container flex para centralizar o GIF
+      document.getElementById("form").innerHTML = '<div style="display: flex; justify-content: center;"><img src="files/loading.gif" width="80"></div>';
+  
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color: black; font-weight: 700; text-align: center;">Obrigado por se registrar. Um representante entrará em contato com você em breve.</p>';
+      }, 2000);
+    });
+  </script>  
+</body>
+</html>

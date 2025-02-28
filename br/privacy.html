@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transição personalizada para o ícone do menu hambúrguer */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Cabeçalho -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Navegação para desktop -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Início</a>
+        <a href="about.html" class="hover:text-gray-300">Sobre</a>
+        <a href="terms.html" class="hover:text-gray-300">Termos</a>
+        <a href="contact.html" class="hover:text-gray-300">Contato</a>
+      </nav>
+      <!-- Menu hambúrguer (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Navegação mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Início</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Sobre</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Termos</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Política de Privacidade</h1>
+      <br>
+      <p>
+        Na Tech View Business, valorizamos e protegemos a privacidade dos nossos clientes e usuários. Esta política de privacidade descreve como coletamos, utilizamos e protegemos as informações pessoais que nos são confiadas por meio dos nossos sites e serviços. Nosso compromisso é garantir a segurança dos seus dados e oferecer total transparência sobre o manuseio das informações.
+      </p>
+      <br>
+      <p>
+        Coletamos dados pessoais de forma legal e ética, sempre com o consentimento explícito do usuário. Entre as informações que podemos coletar estão nomes, endereços de e-mail, números de telefone e outras informações relevantes necessárias para oferecer nossos serviços. Além disso, utilizamos cookies e outras tecnologias de rastreamento para melhorar a experiência do usuário, analisar tendências e administrar o site.
+      </p>
+      <br>
+      <p>
+        As informações coletadas são utilizadas para personalizar nossos serviços, processar solicitações, melhorar a funcionalidade do nosso site e enviar comunicações relevantes, como atualizações ou notícias sobre nossos produtos. Comprometemo-nos a não vender, alugar ou compartilhar suas informações pessoais com terceiros sem o seu consentimento prévio, a menos que seja exigido por lei ou para proteger nossos direitos.
+      </p>
+      <br>
+      <p>
+        Para garantir a segurança dos seus dados, implementamos medidas técnicas e organizacionais que incluem a criptografia das informações, firewalls, acesso restrito aos sistemas e controles de segurança periódicos. Além disso, nossa equipe é treinada nas melhores práticas de manuseio de dados e confidencialidade, o que nos permite manter altos padrões de proteção em todas as nossas operações.
+      </p>
+      <br>
+      <p>
+        É importante que os usuários conheçam e aceitem esta política de privacidade ao utilizar nossos serviços. Recomendamos que você revise este documento periodicamente, pois podemos atualizá-lo em função de mudanças legais ou em nossos processos internos. Se você tiver alguma dúvida ou preocupação sobre o tratamento dos seus dados, não hesite em entrar em contato com nossa equipe através dos canais de atendimento ao cliente.
+      </p>
+      <br>
+      <p>
+        Ao navegar em nosso site, você reconhece que foi informado sobre o uso dos seus dados pessoais e aceita os termos desta política. Sua privacidade é fundamental para nós e nos esforçamos continuamente para manter a integridade e a confidencialidade das suas informações. Adotamos uma abordagem proativa na qual a transparência e a responsabilidade são a base da nossa relação com você.
+      </p>
+      <br>
+      <p>
+        A Tech View Business reserva-se o direito de modificar esta política de privacidade a qualquer momento, informando os usuários através de avisos em nosso site ou por meio de e-mails. Nosso objetivo é sempre proporcionar um ambiente seguro e confiável para que você possa acessar nossos serviços com a tranquilidade de que suas informações pessoais estão protegidas.
+      </p>
+      <br>
+      <p>
+        Esta política de privacidade se aplica a todos os dados pessoais coletados por meio do nosso site e de outros serviços online operados pela Tech View Business. Se você decidir não fornecer as informações solicitadas, pode ser que não consiga usufruir de certas funções ou serviços que oferecemos, mas garantimos que seus dados serão sempre tratados com o máximo cuidado e segurança.
+      </p>
+    </article>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Esquerda do Rodapé: Logo e Informações da Empresa -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business é uma empresa inovadora dedicada a oferecer soluções integrais em TI. <br>
+            Com certificações internacionais e um firme compromisso com a excelência, fornecemos soluções de software seguras, <br>
+            escaláveis e inteligentes para potencializar o sucesso dos nossos clientes.
+          </p>
+          <p class="text-xs mt-4">
+            CNPJ: 78.989.613/0001-90<br>
+            Inscrição Estadual: 8324829-77<br>
+            974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516<br>
+            Telefone: (75) 2871-8215
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Todos os direitos reservados.</p>
+        </div>
+        <!-- Direita do Rodapé: Links de Navegação -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Início</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">Sobre</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Termos</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript para alternar o menu mobile -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
