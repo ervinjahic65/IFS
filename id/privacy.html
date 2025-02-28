@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebijakan Privasi - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transisi kustom untuk ikon menu hamburger */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Navigasi Desktop -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Beranda</a>
+        <a href="about.html" class="hover:text-gray-300">Tentang</a>
+        <a href="terms.html" class="hover:text-gray-300">Syarat</a>
+        <a href="contact.html" class="hover:text-gray-300">Kontak</a>
+      </nav>
+      <!-- Menu Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Menu Navigasi Mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Beranda</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Tentang</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Syarat</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Kebijakan Privasi</h1>
+      <br>
+      <p>
+        Di Tech View Business, kami menghargai dan melindungi privasi klien serta pengguna kami. Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi yang dipercayakan kepada kami melalui situs web dan layanan kami. Komitmen kami adalah untuk memastikan keamanan data Anda dan memberikan transparansi penuh mengenai penanganan informasi kami.
+      </p>
+      <br>
+      <p>
+        Kami mengumpulkan data pribadi dengan cara yang legal dan etis, selalu dengan persetujuan eksplisit dari pengguna. Informasi yang mungkin kami kumpulkan meliputi nama, alamat email, nomor telepon, dan rincian relevan lainnya yang diperlukan untuk menyediakan layanan kami. Selain itu, kami menggunakan cookie dan teknologi pelacakan lainnya untuk meningkatkan pengalaman pengguna, menganalisis tren, dan mengelola situs web.
+      </p>
+      <br>
+      <p>
+        Informasi yang dikumpulkan digunakan untuk mempersonalisasi layanan kami, memproses permintaan, meningkatkan fungsionalitas situs kami, serta mengirimkan komunikasi yang relevan seperti pembaruan atau berita tentang produk kami. Kami berkomitmen untuk tidak menjual, menyewakan, atau membagikan informasi pribadi Anda kepada pihak ketiga tanpa persetujuan Anda sebelumnya, kecuali jika diwajibkan oleh hukum atau untuk melindungi hak kami.
+      </p>
+      <br>
+      <p>
+        Untuk memastikan keamanan data Anda, kami menerapkan langkah-langkah teknis dan organisasi yang mencakup enkripsi data, firewall, akses sistem yang dibatasi, dan audit keamanan secara berkala. Selain itu, staf kami dilatih dalam praktik terbaik penanganan data dan kerahasiaan, sehingga kami dapat mempertahankan standar perlindungan yang tinggi dalam semua operasi kami.
+      </p>
+      <br>
+      <p>
+        Penting bagi pengguna untuk mengetahui dan menerima kebijakan privasi ini saat menggunakan layanan kami. Kami menyarankan untuk meninjau dokumen ini secara berkala, karena kami dapat memperbaruinya sebagai respons terhadap perubahan hukum atau penyesuaian proses internal kami. Jika Anda memiliki pertanyaan atau kekhawatiran mengenai penanganan data Anda, jangan ragu untuk menghubungi tim dukungan pelanggan kami.
+      </p>
+      <br>
+      <p>
+        Dengan mengunjungi situs kami, Anda mengakui bahwa Anda telah diberitahu mengenai penggunaan data pribadi Anda dan menyetujui ketentuan kebijakan ini. Privasi Anda sangat penting bagi kami, dan kami terus berupaya menjaga integritas serta kerahasiaan informasi Anda. Kami mengadopsi pendekatan proaktif di mana transparansi dan akuntabilitas menjadi dasar hubungan kami dengan Anda.
+      </p>
+      <br>
+      <p>
+        Tech View Business berhak untuk mengubah kebijakan privasi ini kapan saja, dengan memberitahu pengguna melalui pemberitahuan di situs web kami atau melalui email. Tujuan kami selalu untuk menyediakan lingkungan yang aman dan andal sehingga Anda dapat mengakses layanan kami dengan keyakinan bahwa informasi pribadi Anda dilindungi.
+      </p>
+      <br>
+      <p>
+        Kebijakan privasi ini berlaku untuk semua data pribadi yang dikumpulkan melalui situs web dan layanan online lainnya yang dioperasikan oleh Tech View Business. Jika Anda memilih untuk tidak memberikan informasi yang diminta, Anda mungkin tidak dapat menikmati fitur atau layanan tertentu yang kami tawarkan; namun, kami menjamin bahwa data Anda akan selalu ditangani dengan perhatian dan keamanan tertinggi.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Footer Kiri: Logo dan Informasi Perusahaan -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business adalah perusahaan inovatif yang berdedikasi untuk menyediakan solusi TI komprehensif. <br>
+            Dengan sertifikasi internasional dan komitmen yang kuat terhadap keunggulan, kami menyediakan solusi perangkat lunak yang aman, skalabel, dan cerdas untuk memberdayakan kesuksesan klien kami.
+          </p>
+          <p class="text-xs mt-4">
+            Nomor Perusahaan: 00943935<br>
+            Alamat: Lime St, London EC3M 7HR, UK<br>
+            Nomor Telepon: 01632 960189
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Hak cipta dilindungi undang-undang.</p>
+        </div>
+        <!-- Footer Kanan: Tautan Navigasi -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Beranda</a></li>
+            <li><a href="about.html" class="hover:text-white text-sm">Tentang</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Syarat</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript untuk Toggle Menu Mobile -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
