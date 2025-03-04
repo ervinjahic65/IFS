@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi Siamo - Tech View Business</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transizione personalizzata per l'icona del menu hamburger */
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-24 w-auto">
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="privacy.html" class="hover:text-gray-300">Privacy</a>
+        <a href="terms.html" class="hover:text-gray-300">Termini</a>
+        <a href="contact.html" class="hover:text-gray-300">Contatti</a>
+      </nav>
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-gray-700">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="privacy.html" class="block hover:text-gray-300">Privacy</a></li>
+        <li><a href="terms.html" class="block hover:text-gray-300">Termini</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <article class="prose max-w-none">
+      <h1>Chi è Tech View Business</h1>
+      <br>
+      <p>
+        Benvenuti in Tech View Business, dove l'innovazione incontra l'eccellenza. Fin dalla nostra nascita, ci siamo dedicati a fornire soluzioni tecnologiche all'avanguardia che favoriscono la crescita aziendale e la trasformazione digitale. Con oltre un decennio di esperienza, il nostro impegno è offrire servizi completi nel campo della tecnologia e dello sviluppo software.
+      </p>
+      <br>
+      <p>
+        La nostra missione è chiara: progettare ed eseguire progetti software che superino le aspettative dei nostri clienti. Crediamo fermamente nel potere della tecnologia per trasformare le aziende, ottimizzare i processi e aprire nuove opportunità di mercato. Per questo collaboriamo strettamente con i nostri clienti, comprendendone le esigenze e fornendo soluzioni personalizzate e scalabili.
+      </p>
+      <br>
+      <p>
+        In Tech View Business, disponiamo di un team multidisciplinare di professionisti impegnati e appassionati di tecnologia. La nostra esperienza spazia dallo sviluppo di applicazioni mobile e sistemi aziendali all'implementazione di soluzioni cloud e consulenza strategica. Ogni progetto viene affrontato con rigore, creatività e una meticolosa attenzione ai dettagli.
+      </p>
+      <br>
+      <p>
+        Adottiamo metodologie agili che ci permettono di consegnare risultati di alta qualità in tempi ridotti. Il nostro approccio completo garantisce che ogni soluzione soddisfi i requisiti specifici di ogni cliente, favorendo l'innovazione e l'efficienza in ogni fase del processo. La sicurezza e l'affidabilità sono pilastri fondamentali dei nostri sviluppi, permettendoci di affermarci come partner strategico per aziende di vari settori.
+      </p>
+      <br>
+      <p>
+        Il miglioramento continuo fa parte della nostra filosofia. Investiamo costantemente in formazione e aggiornamenti tecnologici per rimanere all'avanguardia nelle tendenze e nei progressi di mercato. Questo impegno si riflette in ogni nostro progetto, dove applichiamo tecniche moderne e comprovate per garantire prestazioni ottimali e risultati sostenibili.
+      </p>
+      <br>
+      <p>
+        Il nostro impegno non si limita alla consegna delle soluzioni; forniamo anche supporto tecnico e consulenza post-implementazione per assicurarci che i nostri clienti possano massimizzare i loro investimenti tecnologici. Crediamo nella trasparenza e nella comunicazione aperta, che ci permette di costruire relazioni durature basate sulla fiducia reciproca e sul successo condiviso.
+      </p>
+      <br>
+      <p>
+        In Tech View Business, valorizziamo il lavoro di squadra e la collaborazione—elementi essenziali per affrontare le sfide del mondo digitale. Il nostro obiettivo è diventare un punto di riferimento nel settore, aggiungendo valore attraverso soluzioni innovative su misura per le esigenze in continua evoluzione del mercato.
+      </p>
+      <br>
+      <p>
+        Invitiamo i nostri clienti e partner a esplorare il nostro portfolio di servizi, studiato per servire sia le piccole imprese che le grandi corporazioni. Siamo convinti che la tecnologia sia la chiave per sbloccare il futuro e, in Tech View Business, siamo pronti ad accompagnarti in ogni passo del percorso.
+      </p>
+      <br>
+      <p>
+        Grazie per averci scelto. Il nostro impegno è continuare a crescere e ad adattarci per offrire sempre il meglio in soluzioni tecnologiche, garantendo qualità, sicurezza ed efficienza in ogni progetto. In un mondo in continua evoluzione, Tech View Business è il tuo partner per raggiungere il successo e trasformare la tua visione in realtà.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <!-- Left Footer: Logo and Company Information -->
+        <div class="mb-6 md:mb-0">
+          <img src="files/logo.png" alt="Logo" class="h-24 mb-4">
+          <p class="text-sm">
+            Tech View Business è un'azienda innovativa dedicata a fornire soluzioni IT complete. <br>
+            Con certificazioni internazionali e un forte impegno verso l'eccellenza, offriamo soluzioni software sicure, scalabili e intelligenti per potenziare il successo dei nostri clienti.
+          </p>
+          <p class="text-xs mt-4">
+            Numero della società: 00943935<br>
+            Indirizzo: Lime St, Londra EC3M 7HR, Regno Unito<br>
+            Numero di telefono: 01632 960189
+          </p>
+          <p class="text-xs mt-2">© 2025 Tech View Business. Tutti i diritti riservati.</p>
+        </div>
+        <!-- Right Footer: Navigation Links -->
+        <div>
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li><a href="index.html" class="hover:text-white text-sm">Home</a></li>
+            <li><a href="privacy.html" class="hover:text-white text-sm">Privacy</a></li>
+            <li><a href="terms.html" class="hover:text-white text-sm">Termini</a></li>
+            <li><a href="contact.html" class="hover:text-white text-sm">Contatti</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
